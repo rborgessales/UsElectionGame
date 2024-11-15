@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disputa Eleitoral Americana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disputa Eleitoral Americana</h1>
+    <div id="setup">
+        <label for="candidate1">Nome do Candidato 1:</label>
+        <input type="text" id="candidate1"><br><br>
+        <label for="candidate2">Nome do Candidato 2:</label>
+        <input type="text" id="candidate2"><br><br>
+        <button onclick="startGame()">Iniciar Disputa</button>
+    </div>
+    <div id="game" style="display: none;">
+        <h2>Distribuição de Estados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>Delegados</th>
+                    <th>Vencedor</th>
+                </tr>
+            </thead>
+            <tbody id="stateTable"></tbody>
+        </table>
+        <p id="currentResult"></p>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
